@@ -14,6 +14,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import Button from "@mui/material/Button";
 import Home from "./Pages/Home";
+import DataTable from "./Pages/DataTable";
 import { mainListItems } from "./Components/ListItems";
 import { Routes, Route } from "react-router-dom";
 
@@ -140,6 +141,7 @@ const App = () => {
             <Toolbar />
             <Routes>
               <Route path="/dashboard" element={<Home />} />
+              <Route path="/orders" element={<DataTable />} />
             </Routes>
           </Box>
         </Box>
