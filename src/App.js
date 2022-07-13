@@ -15,6 +15,7 @@ import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import Button from "@mui/material/Button";
 import Home from "./Pages/Home";
 import DataTable from "./Pages/DataTable";
+import AddProduct from "./Pages/AddProduct";
 import { mainListItems } from "./Components/ListItems";
 import { Routes, Route } from "react-router-dom";
 
@@ -142,6 +143,7 @@ const App = () => {
             <Routes>
               <Route path="/dashboard" element={<Home />} />
               <Route path="/orders" element={<DataTable />} />
+              <Route path="/addproduct" element={<AddProduct />} />
             </Routes>
           </Box>
         </Box>

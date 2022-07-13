@@ -1,6 +1,8 @@
 import * as React from "react";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 import axios from "axios";
 
@@ -87,6 +89,14 @@ const TableOrders = () => {
         },
       }}
     >
+      <Button
+        variant="text"
+        sx={{ margin: "10px" }}
+        component={Link}
+        to={"/addproduct"}
+      >
+        Add New
+      </Button>
       <DataGrid
         rows={getData}
         columns={columns}
