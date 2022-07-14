@@ -10,7 +10,7 @@ function preventDefault(event) {
 const Deposits = () => {
   return (
     <>
-      <Title>Revenue</Title>
+      <Title>Total Revenue</Title>
       <Typography component="p" variant="h5">
         Rp 461,870,307
       </Typography>
